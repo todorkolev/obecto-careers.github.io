@@ -1,0 +1,234 @@
+*{ text-decoration:none; margin:0; padding:0; outline: none; -moz-box-sizing: border-box; box-sizing: border-box;}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main {
+    display: block;
+}
+
+input{ animation: blink linear 500ms infinite ; opacity: 1}
+
+.bluespan {color: #0025e1}
+.pinkspan{color: #9E0F78}
+#response  {color: #D37909}
+input:focus {animation: none}
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder , textarea:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder , textarea:focus::-moz-placeholder{ color:transparent; }
+input:focus:-ms-input-placeholder , textarea:focus:-ms-input-placeholder{ color:transparent; }
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+@font-face {
+    font-family: 'Conv_IndieFlower';
+    src: url('fonts/IndieFlower.eot');
+    src: local('☺'), url('fonts/IndieFlower.woff') format('woff'), url('fonts/IndieFlower.ttf') format('truetype'), url('fonts/IndieFlower.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conv_GloriaHallelujah';
+    src: url('fonts/GloriaHallelujah.eot');
+    src: local('☺'), url('fonts/GloriaHallelujah.woff') format('woff'), url('fonts/GloriaHallelujah.ttf') format('truetype'), url('fonts/GloriaHallelujah.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+body, html {overflow: hidden}
+html {font-size: 62.5%;}
+body {font-size: 1.6rem;overflow-x: hidden; color: #ffffff; background-color: transparent;
+      -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+#fixerheader {
+
+    width: 100%;
+}
+#logo {
+    position: relative;
+    text-align: center;
+}
+.inner {
+    line-height: 100vh;
+    margin: auto;
+    max-width: 90%;
+}
+#animationholder {
+    margin: auto;
+    position: relative;
+    top: -20vh;
+    width: 30%;
+}
+#logo img {
+    position: relative;
+    z-index: 4;
+}
+img {
+    border: medium none;
+    height: auto;
+    max-width: 100%;
+    outline: medium none;
+}
+body {
+    background-image: url("img/bg1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cd-section:first-of-type > div::before {
+    color: #6a7083;
+    font-size: 1.3rem;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 20px;
+    width: 100%;
+    z-index: 2;
+}
+
+#trapezoid::before {
+    color: #000;
+    content: "";
+    height: 0;
+    left: 0;
+    line-height: 1;
+    position: absolute;
+    top: -15vw;
+    white-space: pre;
+    width: 100%;
+}
+#trapezoid {
+    border-left: 4vw solid transparent;
+    border-right: 1vw solid transparent;
+    border-top: 35vh solid white;
+    height: 0;
+    line-height: 0 !important;
+    margin: 5% auto auto;
+    position: relative;
+    width: 80%;
+}
+#trapezoid > p {
+    color: #000;
+    font-family: "Conv_IndieFlower";
+    font-size: 2.5vw;
+    font-weight: 100;
+    line-height: 1.2em;
+    position: relative;
+    top: -27vh;
+    text-align: center
+}
+#balls1,#balls2,#balls3{position: absolute; top: -10%; width: 100%; left: 0;  height: 100vh}
+#balls1:before, #balls2:before,#balls3:before, #balls1:after,#balls2:after,#balls3:after{ background: #8dc641; border-radius: 50%; position: absolute; top: 30%; width: 15%; padding-top:15%;z-index: 2;content: '';  }
+#balls1:before,  #balls3:before, #balls2:before{left: 30%;  }
+#balls1:after,  #balls2:after, #balls3:after{right: 30%;}
+#balls1:before{animation: gotopl 1300ms ease-in-out 100ms infinite }
+#balls1:after{ animation: gotopr 1500ms ease-in-out 300ms infinite }
+#balls3:before{animation: gotopl 1300ms ease-in-out 450ms infinite;  }
+#balls3:after{animation: gotopr 1500ms ease-in-out 600ms infinite }
+#balls2:before{animation: gotopl 1300ms ease-in-out 700ms infinite;  }
+#balls2:after{animation: gotopr 1500ms ease-in-out 1s infinite }
+:root .css3-metro-dropdown option,:root .css3-metro-dropdown:after,:root .css3-metro-dropdown::after,:root .css3-metro-dropdown select{color: #000} 
+:root .css3-metro-dropdown select,:root .css3-metro-dropdown:after,:root .css3-metro-dropdown::after{display: block; background:#fff ;}
+:root .css3-metro-dropdown select,:root .css3-metro-dropdown option{ padding: 12px;}
+:root .css3-metro-dropdown{ position: relative; display: inline-block;border: 0; left: 10px;}
+:root .css3-metro-dropdown::after{content: "\25bc";position: absolute;top: 0;right: 0;display: block;width: 32px;font-size: 22px;line-height: 44px; text-align: center;-webkit-pointer-events: none;-moz-pointer-events: none;pointer-events: none; color: #7fa946}
+:root .css3-metro-dropdown select{height: 44px;border: 0;vertical-align: middle; font: normal 16px/1em "Segoe UI", Arial, Helvetica, Sans-serif !important;outline: 0 none;}
+:root .css3-metro-dropdown option{ background: #fff;color: #333;}
+.css3-metro-dropdown  select{ min-width: 75px;border-image: url(img/dropdown.png) 20% round !important;	border-image-outset: 7px  !important;   border-image-width: 10px !important;
+ -webkit-border-image: url(img/dropdown.png) 20% round !important;	 -webkit-border-image-outset: 7px  !important;    -webkit-border-image-width: 10px !important}
+#logo {text-align: center; position: relative}
+@keyframes gotopr {
+    100% {top: -5%;right: 50%; opacity:0.2; width:10%;  padding-top:10%;}
+}
+@keyframes gotopl {
+    100% {left:50%; top: -5%; opacity:0.2; width:10%; padding-top:10%;}
+}
+@media only screen and (max-width: 1024px) {
+    body, html {overflow: visible}
+    .css3-metro-dropdown  select{ border-image: url(img/dropdown.png) 20% / 1.79vw / 0.7vw round  round !important;
+    -webkit-border-image: url(img/dropdown.png) 20% / 1.79vw / 0.7vw round  round !important;}
+    #trapezoid > p {
+        color: #000;
+        font-family: "Conv_IndieFlower";
+        font-size: 1em;
+        font-weight: 100;
+        line-height: 1.2em;
+        position: relative;
+        text-align: center;
+        top: -32vh;
+    }
+}
+@media only screen and (max-width: 460px) {
+    .css3-metro-dropdown{display: block; margin:0 auto 10px auto}
+    select, option {color: #000 !important}
+    .css3-metro-dropdown select {
+        border-image: url("img/dropdown.png") 20% 20% 20% 20% / 3.4vw 3.4vw 3.4vw 3.4vw / 2vw 2vw 2vw 2vw round round !important;
+        -webkit-border-image: url("img/dropdown.png") 20% 20% 20% 20% / 2vw / 1vw round round !important;
+        color: #000 !important;
+      
+        font-size: 18px !important;
+        width:95px;
+    }
+    :root .css3-metro-dropdown::after {
+        color: #7fa946;
+        content: "▼";
+        display: block;
+        font-size: 22px;
+        line-height: 68px;
+        pointer-events: none;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        width: 32px;
+    }
+    #animationholder{top: 0}
+}
+@media only screen and (max-width: 560px) {
+    :root .css3-metro-dropdown select,:root .css3-metro-dropdown option{ padding: 2px;}
+    :root .css3-metro-dropdown::after {
+        color: #7fa946;
+        content: "▼";
+        display: block;
+        font-size: 19px;
+        line-height: 45px;
+        pointer-events: none;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        width: 32px;
+    }
+    .css3-metro-dropdown{margin: 20px 0}
+
+    #trapezoid{    border-top: 250px solid white;}
+    #trapezoid > p{  top: -200px;}
+}
